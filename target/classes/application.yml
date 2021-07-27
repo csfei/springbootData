@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    #若时区报错   需要添加时区设置serverTimezone=UTC&
+    url: jdbc:mysql://127.0.0.1:3306/mybatis?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #切换数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+    #配置监控统计拦截的 filters.stat:监控统计、log4j：日志记录、wall:防御sql注入
+    filters: stat,wall,log4j
+
